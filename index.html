@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pikachu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="trang">
+    <div class="dau">
+      <div>
+        <h1>⚡ Pikachu</h1>
+        <p id="moTa"></p>
+      </div>
+      <div class="levels">
+        <span>LEVEL</span>
+        <button onclick="batDau(1)">1</button>
+        <button onclick="batDau(2)">2</button>
+        <button onclick="batDau(3)">3</button>
+        <button onclick="batDau(4)">4</button>
+        <button onclick="batDau(5)">5</button>
+      </div>
+    </div>
+
+    <div class="thongtin">
+      <span>Điểm: <b id="diem">0</b></span>
+      <span>Còn lại: <b id="conLai">0</b></span>
+      <span>⏱ <b id="gio">0:00</b></span>
+      <button id="nutGoiY" onclick="goiYNhe()">💡 Gợi ý (3)</button>
+      <button onclick="batDau(level)">🔄 Chơi lại</button>
+    </div>
+
+    <p id="thongBao">Chọn hai hình giống nhau để nối!</p>
+
+    <div id="bang"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
